@@ -17,14 +17,14 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
   background-color: #F2F2F2;
 }
 
 .page-header {
-  color: inherit;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -48,18 +48,24 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-user-link {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.main {
+  background-color: #FFFFFF;
+}
+
 .hero {
-  color: inherit;
-  background-color: inherit;
+  background-color: #F2F2F2;
   background-image: url("../images/decorative-element.svg"), url("../images/background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom;
-}
-
-.advantages {
-  background-color: #FFFFFF;
-  color: inherit;
 }
 
 .h2-title {
@@ -73,9 +79,6 @@ body {
 
 .content-description {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
   text-align: center;
 }
 
@@ -104,7 +107,8 @@ body {
 
 .advantages-description {
   font-weight: 400;
-  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 
@@ -116,10 +120,6 @@ body {
   color: #FFFFFF
 }
 
-.promo {
-  background-color: #FFFFFF;
-  color: #000000;
-}
 
 .promo-service-item {
   background-color: #83B3D31F;
@@ -140,14 +140,11 @@ body {
 
 .promo-service-description {
   font-weight: 400;
-  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 
-.search {
-  background-color: #FFFFFF;
-  color: #000000;
-}
 
 .search-button {
   background-color: #756157;
@@ -160,10 +157,6 @@ body {
   text-decoration: none
 }
 
-.subscribe {
-  background-color: #FFFFFF;
-  color: #000000;
-}
 
 .subscribe-background {
   background-image: url("../images/background-2.jpg");
@@ -193,16 +186,25 @@ body {
 
 .subscribe-form-email input {
   font-family: inherit;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 24px;
+  background-color: #F2F2F2;
   color: #000000;
 }
 
 .footer {
   background-color: #FFFFFF;
-  color: #000000;
 }
+
+.social-icon {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 
 .contact-phone {
   font-weight: 400;
@@ -245,6 +247,7 @@ body {
 
 .control {
   font-weight: 400;
+  font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
 }
@@ -271,10 +274,6 @@ body {
   background-color: #82B3D3;
 }
 
-.catalog {
-  background-color: #FFFFFF;
-  color: #000000;
-}
 
 .catalog-title {
   font-weight: 700;
@@ -285,14 +284,9 @@ body {
 
 .select-control {
   font-family: inherit;
-  font-size: inherit;
   font-weight: 400;
-  color: #333333;
-}
-
-.product-list {
-  background-color: #E5E5E5;
-  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .product-card-link {
@@ -308,12 +302,14 @@ body {
 
 .product-card-description {
   font-weight: 400;
-  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .product-card-price {
   font-weight: 400;
-  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .product-card-info {
@@ -339,9 +335,12 @@ body {
   border: none;
 }
 
+.product-card-button-accent {
+  background-color: #7DB54F;
+}
+
 .product-card-rating {
   background-color: #F2F2F2;
-  color: #333333;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
