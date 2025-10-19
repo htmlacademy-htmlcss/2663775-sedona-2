@@ -123,7 +123,7 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="subscribe-form-email">
           <label class="form-label visually-hidden" for="subscribe-email">Укажите ваш email</label>
-          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+          <input class="filed" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
         </p>
         <button class="button" type="submit">Подписаться</button>
       </form>
@@ -155,5 +155,53 @@
     <img class="academy-logo" src="images/html-academy.svg" alt="Логотип HTML академии"/>
   </a>
 </footer>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-auth">
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group">
+          <label class="form-label" for="date-1">Дата Заезда:</label>
+          <input class="auth-form-field" type="text" value="27 апреля 2020" id="date-1" name="date-1" placeholder="Укажите дату">
+          <span class="text-form text-form-accent">Мы не можем отправить вас в прошлое.</span>
+        </p>
+        <p class="field-group">
+          <label class="form-label" for="date-2">Дата Выезда:</label>
+          <input class="auth-form-field" type="text" value="1 сентября 2023" id="date-2" name="ate-2" placeholder="Укажите дату">
+          <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
+        </p>
+        <p class="field-group-half">
+          <label class="form-label" for="adults">Взрослые:</label>
+          <span class="number-control">
+             <button class="control-button" type="button"></button>
+             <input class="field" type="number" value="2" id="adults" name="adults">
+             <button class="control-button control-button-plus" type="button"></button>
+          </span>
+        </p>
+        <p class="field-group-half field-group-half-left">
+          <label class="form-label form-label-icon" for="children">Дети:</label>
+          <span class="tooltip">
+            <button class="tooltip-toggle" type="button">
+              <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+              </svg>
+            </button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.Дети <br>до 6 лет размещаются бесплатно.</span>
+          </span>
+          <span class="number-control">
+             <button class="control-button" type="button"></button>
+             <input class="field" type="number" value="2" id="children" name="children">
+             <button class="control-button control-button-plus" type="button"></button>
+          </span>
+        </p>
+        <button class="button form-button" type="submit">Найти</button>
+      </form>
+    </section>
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </div>
+</div>
 </body>
 </html>

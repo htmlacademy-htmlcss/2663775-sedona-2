@@ -62,19 +62,19 @@
               <li class="filter-catalog-item">
                 <label class="control" for="pool">
                   <input class="control-input" type="checkbox" name="pool" id="pool" checked>
-                  Бассейн
+                  <span class="control-text">Бассейн</span>
                 </label>
               </li>
               <li class="filter-catalog-item">
                 <label class="control" for="parking">
                   <input class="control-input" type="checkbox" name="parking" id="parking" checked>
-                  Парковка
+                  <span class="control-text">Парковка</span>
                 </label>
               </li>
               <li class="filter-catalog-item">
                 <label class="control" for="wi-fi">
                   <input class="control-input" type="checkbox" name="Wi-Fi" id="wi-fi">
-                  Wi-Fi
+                  <span class="control-text">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -84,20 +84,20 @@
             <ul class="filter-catalog-list">
               <li class="filter-catalog-item">
                 <label class="control" for="hostel">
-                  <input class="control-input" type="radio" name="product-group" value="hostel" id="hostel" checked>
-                  Гостиница
+                  <input class="control-input control-input-radio" type="radio" name="product-group" value="hostel" id="hostel" checked>
+                  <span class="control-text">Гостиница</span>
                 </label>
               </li>
               <li class="filter-catalog-item">
                 <label class="control" for="motel">
-                  <input class="control-input" type="radio" name="product-group" value="motel" id="motel">
-                  Мотель
+                  <input class="control-input control-input-radio" type="radio" name="product-group" value="motel" id="motel">
+                  <span class="control-text">Мотель</span>
                 </label>
               </li>
               <li class="filter-catalog-item">
                 <label class="control" for="apartments">
-                  <input class="control-input" type="radio" name="product-group" value="apartments" id="apartments">
-                  Апартаменты
+                  <input class="control-input control-input-radio" type="radio" name="product-group" value="apartments" id="apartments">
+                  <span class="control-text">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -105,11 +105,23 @@
           <fieldset class="price">
             <legend class="price-title">Стоимость, ₽:</legend>
             <label class="price-control price-control-left" for="price-min">
-              <input class="control-input" name="product-group" id="price-min" placeholder="0">
+              <input class="price-control-input" name="product-group" id="price-min" placeholder="0">
+              <span class="price-text">от</span>
             </label>
             <label class="price-control price-control-right" for="price-max">
-              <input class="control-input" name="product-group" id="price-max" placeholder="9000">
+              <input class="price-control-input" name="product-group" id="price-max" placeholder="9000">
+              <span class="price-text">до</span>
             </label>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 10px; width: 226px;">
+                <button type="button" class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button type="button" class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </div>
+            </div>
           </fieldset>
           <div class="filter-button-wrapper">
             <button class="filter-button filter-button-active" type="submit">Применить</button>
@@ -149,7 +161,7 @@
         <p class="product-card-price">От 4000 ₽</p>
         <a class="product-card-info" href="#">подробнее</a>
         <button class="product-card-button" type="button">в избранное</button>
-        <p class="stars star-quantity">
+        <p class="stars star-4">
           <span class="visually-hidden">Отель 4 звезды</span>
         </p>
         <p class="product-card-rating">Рейтинг: 8,5</p>
@@ -165,7 +177,7 @@
         <p class="product-card-price">От 5000 ₽</p>
         <a class="product-card-info" href="#">подробнее</a>
         <button class="product-card-button product-card-button-accent" type="button">в избранное</button>
-        <p class="stars star-quantity">
+        <p class="stars star-4">
           <span class="visually-hidden">Отель 4 звезды</span>
         </p>
         <p class="product-card-rating">Рейтинг: 9,2</p>
@@ -181,7 +193,7 @@
         <p class="product-card-price">От 2500 ₽</p>
         <a class="product-card-info" href="#">подробнее</a>
         <button class="product-card-button" type="button">в избранное</button>
-        <p class="stars star-quantity">
+        <p class="stars star-3">
           <span class="visually-hidden">Отель 3 звезды</span>
         </p>
         <p class="product-card-rating">Рейтинг: 6,9</p>
@@ -197,7 +209,7 @@
         <p class="product-card-price">От 1500 ₽</p>
         <a class="product-card-info" href="#">подробнее</a>
         <button class="product-card-button" type="button">в избранное</button>
-        <p class="stars star-quantity">
+        <p class="stars star-2">
           <span class="visually-hidden">Отель 2 звезды</span>
         </p>
         <p class="product-card-rating">Рейтинг: 5,0</p>
@@ -231,7 +243,7 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="subscribe-form-email">
           <label class="form-label visually-hidden" for="subscribe-email">Укажите ваш email</label>
-          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
+          <input class="filed" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
         </p>
         <button class="button" type="submit">Подписаться</button>
       </form>
