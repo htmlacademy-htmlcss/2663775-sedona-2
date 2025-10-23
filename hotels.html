@@ -22,7 +22,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current navigation-link-current-hotels" href="hotels.html" aria-current="page">Гостиницы</a>
+          <a class="navigation-link navigation-link-current navigation-link-current-hotels" href="#" aria-current="page">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
@@ -49,7 +49,9 @@
         <h1 class="inner-page-title">Гостиницы Седоны</h1>
         <ul class="inner-page-breadcrumbs">
           <li class="inner-page-breadcrumbs-item">
-            <a class="inner-page-breadcrumbs-link inner-page-breadcrumbs-link-home" href="index.html"></a>
+            <a class="inner-page-breadcrumbs-link inner-page-breadcrumbs-link-home" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
           </li>
           <li class="inner-page-breadcrumbs-item">
             <a class="inner-page-breadcrumbs-link inner-page-breadcrumbs-link-hotels" href="hotels.html" aria-current="page">Гостиницы</a>
@@ -141,16 +143,19 @@
         </select>
         <ul class="catalog-view-list">
           <li class="catalog-view-item">
-            <a class="view-button view-button-select" href="#"></a>
-            <span class="visually-hidden">Плитками</span>
+            <a class="view-button view-button-tile view-button-select" href="catalog.html?view=tile">
+              <span class="visually-hidden">Плитками</span>
+            </a>
           </li>
           <li class="catalog-view-item">
-            <a class="view-button view-button-desktop" href="#"></a>
-            <span class="visually-hidden">По одной карточке</span>
+            <a class="view-button view-button-desktop" href="catalog.html?view=card">
+              <span class="visually-hidden">По одной карточке</span>
+            </a>
           </li>
           <li class="catalog-view-item">
-            <a class="view-button view-button-list" href="#"></a>
-            <span class="visually-hidden">Списком</span>
+            <a class="view-button view-button-list" href="catalog.html?view=list">
+              <span class="visually-hidden">Списком</span>
+            </a>
           </li>
         </ul>
       </header>
@@ -247,10 +252,8 @@
         <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="subscribe-form-email">
-            <label class="form-label visually-hidden" for="subscribe-email">Укажите ваш email</label>
-            <input class="filed" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
-          </p>
+          <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
+          <input class="filed" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
         </form>
       </div>
@@ -275,9 +278,11 @@
       </li>
     </ul>
     <address class="contact">
-      <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="contact-phone" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812‑12‑12</a>
     </address>
-    <a class="logo-developer" href="https://htmlacademy.ru/"></a>
+    <a class="logo-developer" href="https://htmlacademy.ru/">
+      <span class="visually-hidden">Логотип разработчика</span>
+    </a>
   </footer>
 </div>
 </body>
