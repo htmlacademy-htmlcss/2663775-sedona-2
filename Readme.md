@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Александр Привалов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2663775).
-* Наставник: `Неизвестно`.
+- Студент: [Александр Привалов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2663775).
+- Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+- Сайт: [Мой проект Седона](https://privalov94.github.io/2663775-sedona-2/).
 
 ---
 
